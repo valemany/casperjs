@@ -5,7 +5,7 @@ casper.start('http://' + SITE + '/user/login', function() {
 	this.echo(this.getCurrentUrl());
 	this.test.assertExists('.btn-block', 'Login buton is available');
 	this.fill('form.primary', {
-		'username': 'valemany12',
+		'username': 'test',
 		'password': '12345'
 	}, true);
 });
